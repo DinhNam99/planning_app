@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+@media print {
+  html.dark,
+  html.dark body {
+    background: #fff !important;
+    color: #0f172a !important;
+  }
+  :root {
+    color-scheme: light;
+  }
+  .print-card {
+    break-inside: avoid;
+  }
+}
